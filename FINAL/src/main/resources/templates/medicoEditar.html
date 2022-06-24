@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---EDITAR MEDICO---</title>
+</head>
+<body>
+    <h1>Editar medico con su id: </h1><h1 th:text="${id}"></h1>
+    <form method="post" th:action="${idEd}">
+        <h3>Registrar Medico</h3>
+        Id: <input type="text" name="id" th:value="${id}" readonly>
+        Nombre: <input type="text" name="Nombre" id="" maxlength="48">
+        Apellido: <input type="text" name="Apellido" id="" maxlength="48"><br>
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>

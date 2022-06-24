@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---REGISTRAR PACIENTE---</title>
+</head>
+<body>
+    <form method="post" action="#">
+        <h3>Registrar Paciente</h3>
+        Nombre: <input type="text" name="Nombre" id="" maxlength="48">
+        Apellido: <input type="text" name="Apellido" id="" maxlength="48"><br>
+        Fecha: <input type='date' id='fecha' name='fecha' value='1999-01-01' min='1950-01-01' max='2021-12-31'>
+        Domicilio: <input type="text" name="Dom" id="" maxlength="58"><br>
+        Pais: <input type="text" name="Pais" id="" maxlength="18">
+        Telefono: <input type="text" name="Tel" id="" maxlength="11">
+        Email: <input type="text" name="Mail" id="" maxlength="48"><br>
+        Observacion: <input type="text" name="Obs" id="" maxlength="48">
+        <br><br>
+        <h2>**Datos de cita**</h2>
+        Donativo: <input type="text" name="pago" id="">
+        Turno: <select name="turno">
+            <option value="M">Entre las 7:00-13:00</option>
+            <option value="V">Entre las 13:00-19:00</option>
+          </select>
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>
+

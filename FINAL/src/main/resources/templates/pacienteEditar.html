@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---EDITAR PACIENTE---</title>
+</head>
+<body>
+    <form method="post" th:action="${idEd}">
+        <h3>Editar Paciente</h3>
+        Id: <input type="text" name="id" id="" th:value="${id}" readonly>
+        Nombre: <input type="text" name="Nombre" id="" maxlength="48">
+        Apellido: <input type="text" name="Apellido" id="" maxlength="48"><br>
+        Fecha: <input type='date' id='fecha' name='fecha' value='1999-01-01' min='1950-01-01' max='2021-12-31'>
+        Domicilio: <input type="text" name="Dom" id="" maxlength="58"><br>
+        Pais: <input type="text" name="Pais" id="" maxlength="18">
+        Telefono: <input type="text" name="Tel" id="" maxlength="11">
+        Email: <input type="text" name="Mail" id="" maxlength="48"><br>
+        <br><br>
+        <input type="submit" value="Editar">
+    </form>
+</body>
+</html>
+
